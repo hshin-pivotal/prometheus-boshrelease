@@ -10,7 +10,7 @@ instance_groups:
     persistent_disk: 1_024
     stemcell: default
     networks:
-      - name: default
+      - name: PAS-Deployment
     jobs:
       - name: alertmanager
         release: prometheus
