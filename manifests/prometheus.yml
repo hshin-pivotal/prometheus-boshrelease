@@ -4,7 +4,7 @@ name: prometheus
 instance_groups:
   - name: alertmanager
     azs:
-      - z1
+      - pas-az1
     instances: 1
     vm_type: small
     persistent_disk: 1_024
@@ -25,7 +25,7 @@ instance_groups:
 
   - name: prometheus2
     azs:
-      - z1
+      - pas-az1
     instances: 1
     vm_type: small
     persistent_disk: 10_240
@@ -52,7 +52,7 @@ instance_groups:
 
   - name: database
     azs:
-      - z1
+      - pas-az1
     instances: 1
     vm_type: small
     persistent_disk: 10_240
@@ -79,7 +79,7 @@ instance_groups:
 
   - name: grafana
     azs:
-      - z1
+      - pas-az1
     instances: 1
     vm_type: small
     persistent_disk: 1_024
@@ -128,7 +128,7 @@ instance_groups:
 
   - name: nginx
     azs:
-      - z1
+      - pas-az1
     instances: 1
     vm_type: small
     stemcell: default
