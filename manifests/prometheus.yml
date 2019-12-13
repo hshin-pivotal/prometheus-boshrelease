@@ -6,7 +6,7 @@ instance_groups:
     azs:
       - z1
     instances: 1
-    vm_type: default
+    vm_type: small
     persistent_disk: 1_024
     stemcell: default
     networks:
@@ -27,11 +27,11 @@ instance_groups:
     azs:
       - z1
     instances: 1
-    vm_type: default
+    vm_type: small
     persistent_disk: 10_240
     stemcell: default
     networks:
-      - name: default
+      - name: PAS-Deployment
     jobs:
       - name: prometheus2
         release: prometheus
@@ -54,11 +54,11 @@ instance_groups:
     azs:
       - z1
     instances: 1
-    vm_type: default
+    vm_type: small
     persistent_disk: 10_240
     stemcell: default
     networks:
-      - name: default
+      - name: PAS-Deployment
     jobs:
       - name: postgres
         release: postgres
@@ -81,11 +81,11 @@ instance_groups:
     azs:
       - z1
     instances: 1
-    vm_type: default
+    vm_type: small
     persistent_disk: 1_024
     stemcell: default
     networks:
-      - name: default
+      - name: PAS-Deployment
     jobs:
       - name: grafana
         release: prometheus
@@ -130,10 +130,10 @@ instance_groups:
     azs:
       - z1
     instances: 1
-    vm_type: default
+    vm_type: small
     stemcell: default
     networks:
-      - name: default
+      - name: PAS-Deployment
     jobs:
       - name: nginx
         release: prometheus
